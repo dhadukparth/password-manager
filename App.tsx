@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { CustomSplashScreen } from "./src/components/SplashScreen";
@@ -32,6 +33,7 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
+      <StatusBar style="light" backgroundColor="#1e293b" animated={true} />
       <HomeScreen />
     </SafeAreaProvider>
   );

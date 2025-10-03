@@ -90,7 +90,7 @@ export const HomeScreen = () => {
   if (loading) {
     return (
       <SafeAreaView style={styles.container} edges={["top"]}>
-        <StatusBar backgroundColor={COLORS.darkBg} style="light" animated />
+        <StatusBar style="light" backgroundColor="#1e293b" animated={true} />
         <Header />
         <View style={styles.emptyState}>
           <ActivityIndicator size="large" color={COLORS.primary} />
@@ -101,7 +101,7 @@ export const HomeScreen = () => {
 
   return (
     <SafeAreaView style={styles.container} edges={["top"]}>
-      <StatusBar backgroundColor={COLORS.darkBg} style="light" animated />
+      <StatusBar style="light" backgroundColor="#1e293b" animated={true} />
 
       <Header />
 
